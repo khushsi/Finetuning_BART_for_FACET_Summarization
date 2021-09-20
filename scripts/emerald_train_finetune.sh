@@ -36,6 +36,7 @@ CUDA_VISIBLE_DEVICES=0 fairseq-train data-bin \
 
 #!/bin/bash
 echo "different checkpoints"
+sleep 30
 for entry in `ls checkpoints/*.pt | sed -r 's/^.+\///'`
 do
 echo $entry
